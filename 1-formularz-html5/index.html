@@ -29,15 +29,18 @@
         </select>
 <br><br>
 
-<label>Płeć:</label><br>
-    <input type="radio" name="gender" value="mezczyzna">Mężczyzna<br>
-    <input type="radio" name="gender" value="kobieta">Kobieta<br>
+<p>Płeć:</p>
+    <label for="mezczyzna"></label>
+    <input type="radio" name="gender" id="mezczyzna">Mężczyzna<br>
+    <label for="kobieta"></label>
+    <input type="radio" name="gender" id="kobieta">Kobieta<br>
 <br>
 <label for="checkbox">Zgoda na dane osobowe:</label>
     <input type="checkbox" name="checkbox" id="checkbox"><br>
 <br>
 
-<textarea name="wiadomosc" cols="30" rows="10">Wpisz wiadomość</textarea><br>
+<label for="wiadomosc">Wiadomość:</label><br>
+<textarea name="wiadomosc" cols="30" rows="10" id="wiadomosc">Wpisz wiadomość</textarea><br>
 
 <input type="submit" value="wyslij"><br>
 
