@@ -1,0 +1,240 @@
+/* selektor uniwersalny- lapie wszystkie elementy na stronie*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*selektor elementu - lapie wszystkie podane jako selektor elementy na stronie*/
+
+p {
+    font-size: 30px;
+}
+
+/*selektor identyfikatora lapie element o  okreslonym id w kodzie html */
+#testowy {
+    
+    background-color: aqua;
+}
+
+/*selektor klasy lapie elementy o okreslonej klasie kodu z html */
+.testowy-inner {
+    color: green;
+    font-size: 36px;
+}
+/*selektor potomka lapie wszystki selektorów dodanych po spacji*/
+#selektor-potomka p {
+    font-size: 48px;
+    color: red;
+}
+/*selektor dziecka/bezposredniego potomka  - lapie elementy na bezposrednim poziomie zagniezdzenia (1 w dół)*/
+
+#selektor-dziecka > p {
+    font-size: 40px;
+    color: violet;
+    
+}
+
+/*selektor brata/braci - lapie element bezposrednio po elemencie poprzedzającym, na tym samym poziomie zagniezdzenia*/
+
+#selektor-braci span+p {
+    
+    color: black;
+    background-color: aqua;
+}
+
+/*pseudoelementy before i after nie istnieja bez ustawionej własciwosci Content (może byc nawet pusta)*/
+#pseudoelementy h1::before {
+    content: "Lorem";
+    color: red;
+}
+#pseudoelementy h1::after {
+    content: " Lorem";
+    color: green;
+}
+/*pseudoelement first-letter*/
+
+#pseudoelementy h1::first-letter {
+    
+    color: yellow;
+}
+/*pseudoelementy ::first-line lapie całą pierwszą linie podanego selektora*/
+
+#pseudoelementy .first-line::first-line {
+    color: chocolate;
+}
+
+/*pseudoklasa :link, słuzy  do stylowania nieodwieddzonych linkó */
+
+#linki a:link {
+    color: grey;
+}
+/*pseudoklasa: visited, słuzy do stylowania nieodwiedzonych linków*/
+#linki a:visited {
+    color: pink;
+}
+
+/*pseudoklasa :hoover, po najechaniu myszką na element */
+#linki a:hoover {
+    color: red;
+}
+
+/*pseudoklasa :active, kiedy trzymamy LPM na elemencie */
+#linki a:active {
+    color: orange;
+}
+/*pseudoklasa :focus, kiedy uzupelniamy inputy, textarea*/
+#inputy input {
+    
+    width: 99%;
+    margin-bottom: 20px;
+}
+#inputy input:focus {
+    border: 3px solid red;
+}
+/*pseudoklasa :target, okresla co ma się stac z elementrem, do którego prowadzi Kotwica (link z okreslonym id elementu)*/
+:target {
+    border: 1px solid black;
+}
+/*pseudoklasa :lang(nazwa języka), określa odwołanie do elementu z atrybutem lang o okreslonej nazwie języka*/
+div {
+    background-color: grey;
+}
+div:lang(pl) {
+    background-color: yellow;
+}
+/*pseudoelementy :first-child, :last-child - wybieraja pierwszy i ostatni element z okreslonego selektora*/
+
+#lista-dzieci ul .list-item {
+    font-size: 20px;
+    color: green;
+}
+#lista-dzieci ul .list-item:first-child {
+    font-size: 30px;
+    color:red;
+}
+#lista-dzieci ul .list-item:last-child {
+    font-size: 30px;
+    color: blue;
+}
+/*pseudoklasa :only-child, lapie element, który jest Jedynym Dzieckiem/ Potomkiem elementu nadrzednego*/
+
+#jedyne-dziecko span:only-child {
+    
+    font-style: italic;
+    font-size: 30px;
+    color:green;
+}
+/*pseudoklasa :empty okresla elemrnt, ltóry nie pisaiada zadnego contentu*/
+
+div:empty {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+/*pseudoklasy nth-child() i nth-last-child(), służa do określania elementów dzieci, możemy wskazać konkretme dziecko, parzyste/ nieparzyste dzieci, lub utworzyc wzór, które dzieci i  co ile dzieci mają być wybierane*/
+
+#kontener .inner {
+    
+    display: inline-block;
+    height: 300px;
+    background-color: red;
+    margin-bottom: 20px;
+    width: 33%;
+    float: left;
+    margin-right: 0.5%;
+    
+}
+
+#kontener .inner:nth-child(3n+3){
+    margin-right: 0;
+}
+#kontener .inner:nth-child(even){
+    background-color: yellow;
+}
+
+/*
+#kontener .inner:nth-child(3)
+#kontener .inner:nth-child(6) {
+    margin-right: 0;
+}
+*/
+
+/*zeby wyłączyc opływanie należy skorzystac z clear*/
+.clear {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+/*selektory atrybutów*/
+
+input[type] {
+    background-color: green;
+}
+/*selektor[attr] - okresla elementy, które maja atrybut attr, niezależnie od ich wartości*/
+/*selector[attr+"val"]- okresla elementy, które posiadają atrybut attr o okreslonej wartości"val"*/
+input[type="tel"] {
+    background-color: red;
+    
+}
+/*selector[attr~="val"] - określa element, który posiada atrybut, który wartości posiada dany ciąg znaków (dokladnie)*/
+
+input[type~="opis"] {
+    background-color: black;
+}
+/*selector[attr*="val"] - określa element, który w atrybucie Posiada Wystapienie ciagu znaków*/
+input[type*="piaty"] 
+{
+    background-color: blue;
+}
+/*selector[attr^="val"] - określa elementy, których atrybut rozpoczyna się podanym ciągiem znaków*/
+/*np. <input type="poczatek text"*/
+input[type^="poczatek"] 
+{
+    background-color: violet;
+}
+/*selector[attr^="val"] - określa elementy, których atrybut kończy się podanym ciągiem znaków*/
+/*np. <input type="text piaty koniec"*/
+input[type$="koniec"] 
+{
+    background-color: blue;
+}
+#centrowanie bloka {
+    
+    background-color: aqua;
+}
+
+centrowanie-bloka .inner {
+    width: 30%;
+    margin: 0 auto;
+}
+#floated img {
+    float: left;
+}
+img {
+    width: 200px;
+}
+#tranzycje .inner-1,
+#tranzycje .inner-2 {
+    height: 300px;
+}
+
+#tranzycje .inner-1 {
+    background-color: green;
+    transition-property: width;
+    transition-duration: 4s;
+/*    transition-delay: 2s;*/
+    transition: all 0.4s;
+
+    
+}
+#tranzycje .inner-1:hover {
+    background-color: blue;
+    width: 800px;
+}
+
+#tranzycje .inner-2 {
+    background-color: red;
+}
+
+
