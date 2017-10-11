@@ -1,0 +1,55 @@
+#div {
+    height: 100vh;
+}
+
+@media all and (min-width:1170px) {
+    
+    #h1 {
+        background: url(man-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+       
+     }
+    p {
+        width: 100%;
+        text-align: left;
+        transform: translateY(-250px);
+        color: #FFFFFF;
+        font-size: 30px;
+        margin: 0;
+    }
+}
+
+@media all and (min-width:993px) and (max-width:1169px) {
+    
+    #h1 {
+        background: url(man-2.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:70vh;
+        
+    }
+    p {
+        color: #FFFFFF;
+        transform: translateY(-300px);
+        left: 50%;
+        
+       
+        
+    }
+}
+
+@media all and (max-width:992px) {
+    
+    #h1 {
+        background: url(man-1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50vh;
+    }
+    p {
+        text-align: left;
+    }
+}

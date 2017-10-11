@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: 'Verdana'; 
+}
+#div {
+    text-align: center;
+    position: relative;
+   
+}
+
+#h1 {
+    background: url(man-1.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+span {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
