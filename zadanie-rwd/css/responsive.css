@@ -1,5 +1,6 @@
-#div {
+#background {
     height: 100vh;
+    overflow: hidden;
 }
 
 @media all and (min-width:1170px) {
@@ -17,8 +18,13 @@
         text-align: left;
         transform: translateY(-250px);
         color: #FFFFFF;
+        font-size: 20px;
+        left: 300px;
+        margin-left: 40px;
+    }
+    span {
         font-size: 30px;
-        margin: 0;
+        padding-top: 20px;
     }
 }
 
@@ -27,17 +33,19 @@
     #h1 {
         background: url(man-2.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         height:70vh;
         
-    }
+}
     p {
         color: #FFFFFF;
-        transform: translateY(-300px);
         left: 50%;
-        
-       
-        
+        margin-left: 150px;
+        transform: translateY(-300px)
+}
+    span{
+        margin-left: 65px;
+        padding-top: 20px;
     }
 }
 
@@ -46,10 +54,16 @@
     #h1 {
         background: url(man-1.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         height: 50vh;
+        background-position: center;
+        
     }
     p {
-        text-align: left;
+        text-align: center;
+    }
+    span {
+        font-size: 20px;
+        padding-top: 20px;
     }
 }

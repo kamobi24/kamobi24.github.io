@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Verdana'; 
 }
-#div {
+#background {
     text-align: center;
     position: relative;
    
@@ -14,7 +14,6 @@ body {
     background-position: center;
    
 }
-
 p {
     width: 100%;
     font-size: 16px;
