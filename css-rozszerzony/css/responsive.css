@@ -21,10 +21,17 @@
 }
 
 @media all and (max-width: 1200px) {
+    div {
+        background-color: red;
+    }
     
 }
 @media all and (max-width: 992px) {
     
+    div{
+        
+    background-color: aqua;
+    }
 }
 @media all and (max-width: 768px){
     
