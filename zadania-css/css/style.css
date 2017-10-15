@@ -205,6 +205,7 @@ footer {
     background-attachment: fixed;
 }
 
+
 .box {
     height: 300px;
     width: 300px;
@@ -235,3 +236,110 @@ footer {
 .box:hover .box-back {
     transform: rotateY(0deg);
 }
+.containers {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.column {
+    height: 100vh;
+    width: 25%;
+    display: inline-block;
+    float: left;
+    transition: all 0.5s linear;
+}
+.background {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.column:hover {
+    width: 40%;
+}
+.containers:hover .column:not(:hover){
+    width: 20%;
+}
+#background-1 {
+    background-color: red;
+}
+#background-2 {
+    background-color: green;
+}
+#background-3 {
+    background-color: yellow;
+}
+#background-4 {
+    background-color: aqua;
+}
+.background {
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    position: relative;;
+}
+.background-in {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+.backgrounds-in {
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    position: absolute;
+}
+.bacgrounds-in:first-child {
+    top: 0;
+    left: 0;
+    animation: load-one;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+.backgrounds-in:last-child {
+    top: 0;
+    left: 0;
+    animation: load-two;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+@keyframes load-one {
+    0%{
+    top:0;
+    left:0;
+    height:30px;
+    width:30px;
+        }
+    25% {
+        top: 70px;
+        left: 0;
+        height: 15px;
+        width: 15px;
+    }
+    50% {
+        top: 70px;
+        left: 70px;
+        height: 30px;
+        width: 30px;
+    }
+    75% {
+        top: 0%;
+        left: 70px;
+        height: 15px;
+        width: 15px;
+    }
+    100% {
+        
+    }
+
+
+
+
+
