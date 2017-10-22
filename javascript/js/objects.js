@@ -15,6 +15,8 @@ osoba.przedstawOsobe();
 
 //jak sie odwołujemy do własciwości elementu z jego wnętrza to uzywamy "this" np. console.log(this.imie)
 
+//dodanie nowej własciwości do obiektu 'osoba'
+
 osoba.nazwisko = 'Obuchiewicz';
 
 console.log(osoba.nazwisko);
