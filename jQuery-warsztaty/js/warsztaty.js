@@ -16,15 +16,18 @@ slideShow.find('.single-slide').each(function(index){
     );
     
 });
+//    Funkcja Slide 
     function slide(newSlideIndex) {
         if (newSlideIndex < 0 || newSlideIndex > slideCount -1){
             console.log('nie ma slajdu o takim indexie');
             return;
         }
+//        Napisy na slajdach
         var slideCaption = slideShow.find('.slide-caption').eq(newSlideIndex);
         
         var marginLeft = (newSlideIndex * (-100)) + '%';
         
+//        Ukrywanie napisu i pojawienie sie go dopiero po pojawieniu się slajdu
         slideCaption.hide();
         
         slideShow.animate({'margin-left': marginLeft}, 1000, function(){
@@ -34,6 +37,7 @@ slideShow.find('.single-slide').each(function(index){
         
         
     }
+//    obsługa nawigacji slidera
  $('.prev-slide').click(function(){
     slide(slideIndex -1); 
      
