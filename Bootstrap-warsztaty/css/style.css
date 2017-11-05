@@ -1,0 +1,300 @@
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    
+    
+}
+
+section {
+    padding: 60px 0;
+    
+}
+.img-circle {
+    
+    width: 100%;
+    border-radius:50%;
+}
+.social-link {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #222;
+    border: 1px solid #222;
+    border-radius: 50%;
+    font-size: 1.8em;
+    color: #fff;
+    transition: all .3s;
+    margin: 5px;
+    display: inline-block;
+}
+.social-link:hover {
+    background-color: aqua;
+    border: 1px solid aqua;
+    color: #fff;
+}
+
+#main-nav a.navbar-brand {
+    color: #fff;
+    font-family: 'Montserrant', sans-serif;
+    font-size: 2em;
+    
+}
+
+#main-nav .nav-item a{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrant', sans-serif;
+    transition: all .3s;
+    margin-right: 10px;
+   
+    
+}
+#main-nav .nav-item a:hover{
+    color: aqua;
+    
+}
+
+#main-nav.scroll {
+    
+    background-color: rgba(14,216,214,0.75);
+}
+#main-nav.scroll .nav-item a:hover {
+    color: #777;
+     
+}
+#main-header {
+    
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(img/header/pictures_on_the_wall.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+    
+}
+
+
+#main-header .text {
+   
+    transform: translateY(30vh);
+    color: #fff;
+    
+}
+
+#main-header h2 {
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 2em;
+    
+}
+
+#main-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    margin: 45px 0;
+}
+#main-header .read-more {
+    background-color:#0ed8d6;
+    color: #fff;
+
+
+}
+
+#main-header .read-more:hover {
+    background-color: #fff;
+    border: 1px solid #0ed8d6;
+    color:#0ed8d6;
+    
+}  
+
+#services {
+    color: black;
+}
+.col-md {
+    font-size: 20px;
+    
+}
+section {
+    padding: 60px 0;
+}
+section .section-header {
+    margin-bottom: 70px;
+    text-align: center;
+    width: 100%;
+}
+section .section-header .section-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    
+}
+section .section-caption {
+    font-family: 'Droid Serif', sans-serif;
+    
+}
+
+    
+}
+section h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/*Section Services*/
+
+#services .fa {
+    font-size: 2.8em;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border: 1px solid #0ed8d6;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #0ed8d6;
+    transition: all 1s;
+    
+}
+#services .fa:hover {
+    color: #0ed8d6;
+    background-color: #fff;
+    transform: rotate(360deg);
+}
+
+/*Druga sekcja "portfolio"*/
+
+#portfolio {
+    
+    background-color: lightgrey;
+}
+#portfolio .portfolio-item {
+    
+    background-color: white;
+}
+#portfolio .portfolio-image {
+    overflow: hidden;
+}
+#portfolio .portfolio-image .portfolio-image-background {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .3s;
+}
+
+#portfolio .portfolio-image .portfolio-image-mask {
+    
+    background-color: rgba(14,216,214,0.85);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    transition: all .3s;
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#portfolio .portfolio-image figcaption {
+    padding: 15px;
+}
+
+#portfolio .portfolio-image .portfolio-image-background:hover {
+    
+    transform: scale(1.5);
+    
+    
+}
+#portfolio .portfolio-image .portfolio-image-background .portfolio-image-mask:hover {
+    opacity: 1;
+}
+
+#portfolio-image-background-1 {
+    background-image: url(img/portfolio/box_of_cookies.jpg);
+}
+#portfolio-image-background-2 {
+    background-image: url(img/portfolio/chaotic_paint.jpg);
+}
+#portfolio-image-background-3 {
+    background-image: url(img/portfolio/chestnut_on_bracket.jpg);
+}
+#portfolio-image-background-4 {
+    background-image: url(img/portfolio/child_with_blue_paint.jpg);
+}
+#portfolio-image-background-5 {
+    background-image: url(img/portfolio/house_with_blue_doors.jpg);
+}
+#portfolio-image-background-6 {
+    background-image: url(img/portfolio/typing_on_laptop.jpg);
+}
+
+#team .team-description {
+    margin-top: 40px;
+}
+/*Section Contact!*/
+#contact {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../css/img/footer/world-map.jpg);
+        
+}
+#contact .section-header,
+#contact .section-header .section-title {
+    color: #fff;
+}
+#contact .contact-form .contact-form-column {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#contact input,
+#contact textarea {
+    text-transform: uppercase;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+#contact input:not([type='submit']),
+#contact textarea {
+    border: 0px solid;
+}
+#contact textarea {
+    height: 100%;
+}
+#contact input[type="submit"] {
+    background-color: aqua;
+    border: 1px solid aqua;
+    color: #fff;
+    transition: all .3s;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
+#contact input[type="submit"]:hover {
+    background-color: #fff;
+    color: aqua;
+    
+}
+
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+
+#main-footer .copyright,
+#main-footer .footer-nav {
+    line-height: 50px;
+}
+#main-footer footer-nav .footer-nav-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+#main-footer .footer-nav .footer-nav-item a {
+    color: #777;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: all .3s;
+}
+#main-footer .footer-nav .footer-nav-item a:hover {
+    color: #0ed8d6;
+}
