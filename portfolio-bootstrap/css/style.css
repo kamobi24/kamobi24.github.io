@@ -1,13 +1,23 @@
-*{
+
+
+body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lato", sans-serif;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
 }
 h1,h2,span {
     font-weight: 100;
 }
 
 section {
-    padding: 60px 0;
+    padding: 30px 50px;
+    width: 100%;
+}
+.clear {
+    clear: both;
 }
 .container-fluid {
     display: flex;
@@ -25,9 +35,6 @@ section {
 
 #main-nav {
     background-color: white;
-    position: fixed;
-    height: 50px;
-  
 }
 #main-nav a {
     color: lime;
@@ -58,7 +65,7 @@ span {
     width: 300px;
 }
 #about {
-    background-color: floralwhite;
+    background-color: #F9FCFE;
     width: 100%;
     
 }
@@ -69,10 +76,16 @@ span {
 #about h2 {
     color: black;
 }
+#skills #icons {
+    padding: 0 20%;
+}
 
-#icons {
-    margin-top: 60px;
-    padding: 0 250px;
+#skills #icons figure {
+    display: inline-block;
+}
+#skills #icons figure img {
+    margin-top: 30px;
+    
 }
 #skills p {
     margin-top: 40px;
@@ -143,7 +156,6 @@ span {
     margin: 72px 0;
     line-height: 25px;
 }
-
 #contact address a{
     color: #1ac056;
 }
@@ -167,6 +179,10 @@ span {
 #contact .contact-form form {
     text-align: right;
 }
+#contact .contact-form {
+    padding-top: 10%;
+    
+}
 #contact .contact-form form input,
 #contact .contact-form form textarea {
     width: 100%;
@@ -175,6 +191,8 @@ span {
     background-color: #2b4a64;
     border: #2b4a64 0px;
     color: #fff;
+    
+    
 }
 #contact .contact-form form input[type='submit'] {
     background-color: #1ac056;
