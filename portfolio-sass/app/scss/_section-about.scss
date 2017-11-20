@@ -1,0 +1,27 @@
+#about {
+    text-align: center;
+    background-color: #F9FCFE;
+    overflow: hidden;
+
+    figure,
+    .about-info {
+        width: 50%;
+        float: left;
+        display: inline-block;
+        margin: 0;
+
+
+
+        img {
+            width: 50%;
+            float: none;
+        }
+    }
+    p {
+        text-align: left;
+    }
+    figure {
+        text-align: center;
+    }
+
+}

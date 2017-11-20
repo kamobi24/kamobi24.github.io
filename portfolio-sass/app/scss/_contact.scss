@@ -1,0 +1,77 @@
+#contact {
+    background-color: $third-color;
+    color: $general-color;
+    overflow: hidden;
+
+    .contact-data {
+        width: 50%;
+        float: left;
+
+        h2 {
+            text-align: left;
+            font-size: 38px;
+        }
+        address {
+            font-style: normal;
+            margin: 72px 0;
+            line-height: 25px;
+
+            a {
+                color: $second-color;
+            }
+        }
+        .contact-social-icons a {
+            display: inline-block;
+            color: $general-color;
+            height: 38px;
+            width: 38px;
+            text-align: center;
+            line-height: 38px;
+            border: 1px solid $general-color;
+            margin-right: 30px;
+            font-size: 22px;
+
+            &:hover {
+                color: $third-color;
+                border: 1px solid $third-color;
+                background-color: $general-color;
+            }
+        }
+    }
+    .contact-form {
+        width: 50%;
+        float: left;
+        margin-top: 100px;
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #2b4a64;
+            border: #2b4a64 0px;
+            color: $general-color;
+
+            &:focus {
+                background-color: #426684;
+            }
+        }
+        form input[type='submit'] {
+            background-color: $second-color;
+            color: $general-color;
+            width: auto;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 15px 30px;
+            float: right;
+            border: 1px $second-color solid; 
+
+            &:hover {
+                background-color: #fff;
+                color: $second-color;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,40 @@
+#main-nav {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background-color: $general-color;
+    height: 50px;
+    z-index: 2;
+
+
+    .toggle,
+    [id="drop"] {
+        display: none;
+    }
+    ul {
+        background-color: $general-color;
+
+    }
+
+    .menu {
+        margin: 0;
+        list-style-type: none;
+        text-align: right;
+
+        .menu-item {
+            display: inline-block;
+            margin-right: 30px;
+            line-height: 50px;
+
+            a {
+                text-decoration: none;
+                color: $second-color;
+
+                &:hover {
+                    color: #333333;
+                }
+            }
+        }
+    }
+
+}

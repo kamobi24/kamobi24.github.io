@@ -1,0 +1,47 @@
+#portfolio {
+
+    .portfolio-items {
+        text-align: center;
+        font-size: 0;
+
+        #portfolio-item-1 {
+            background-image: url(../img/portfolio1.jpg); 
+        }
+        #portfolio-item-2 {
+            background-image: url(../img/portfolio2.jpg); 
+        }
+        #portfolio-item-3 {
+            background-image: url(../img/portfolio4.jpg);
+        }
+
+        .portfolio-item {
+            @include portfolio-item;
+
+            .item-mask {
+                @include item-mask;
+
+                &:hover {
+                    opacity: 1;
+                }
+                .item-content {
+                    @include item-content;
+
+                    .item-content-inner {
+                        @include item-content-inner;
+
+                        a {
+                            color: $general-color;
+
+                            &:hover {
+
+                                color: green;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,38 @@
+#main-header {
+    height: 80vh;
+    background: url('../img/header-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .header-inner {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: $main-font;
+
+        h1 {
+            font-size: 70px;
+
+            span {
+                font-size: 70px;
+                color: $second-color;
+
+            }
+        }
+        h1,
+        h2 {
+            font-weight: 100;
+        }
+        h2 {
+            font-size: 40px;
+
+            span {
+                color: $second-color;
+            }
+        }
+    }
+}

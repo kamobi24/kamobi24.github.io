@@ -1,0 +1,30 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $mainsc-font;
+}
+h2 {
+    font-family: $main-font;
+    font-weight: 100;
+    font-size: 35px;
+}
+h2 span {
+    color: $second-color;
+    
+}
+
+section {
+    padding: 30px 50px;
+    width: 100%;
+}
+.clear {
+    clear: both;
+}
+
+    p,
+    h2 {
+        text-align: center;
+}
