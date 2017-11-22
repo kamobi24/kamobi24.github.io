@@ -65,26 +65,30 @@ function ajax(ajaxOptions) {
     httpReq.send();
 }
 
-function pobierzDane() {
-    ajax({
-        type: "GET",
-        url: "http://echo.jsontest.com/imie/Piotr/nazwisko/Lewinski/zawod/Programista/firma/Akademia108",
-        onError: function (msg) {
-            console.log(msg);
-        },
-        onSuccess: function (response) {
 
-            //            console.log("połączenie działa i dane są pobierane :)");
+ajax({
+    type: "GET",
+    url: "http://echo.jsontest.com/imie/Piotr/nazwisko/Lewinski/zawod/Programista/firma/Akademia108",
+    onError: function (msg) {
+        console.log(msg);
+    },
+    onSuccess: function (response) {
 
-            var jsonObj = JSON.parse(response);
+        //            console.log("połączenie działa i dane są pobierane :)");
 
-            console.log(jsonObj);
-            
-            $('button').after($('<div id="dane-programisty"></div>').append(jsonObj.imie + ' ' + jsonObj.nazwisko + ' ' + jsonObj.zawod + ' ' + jsonObj.firma + ' '));
-            
-           
+        var jsonObj = JSON.parse(response);
+
+        console.log(jsonObj);
+
+        $('button').after($('<div id="dane-programisty"></div>'));
+        
+        $("button").click(function () {
+            $("#dane-programisty").text(jsonObj.imie + ' ' + jsonObj.nazwisko + ' ' + jsonObj.zawod + ' ' + jsonObj.firma + ' ');
+        })
 
 
-        }
-    });
-};
+
+
+
+    }
+});
